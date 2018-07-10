@@ -1,5 +1,10 @@
 use nom::{IResult, ErrorKind, Needed};
 use nom::Err;
+
+#[cfg(feature = "verbose-errors")]
+use nom::verbose_errors::Context;
+
+#[cfg(not(feature = "verbose-errors"))]
 use nom::simple_errors::Context;
 
 macro_rules! with_restriction (

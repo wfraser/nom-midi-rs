@@ -12,6 +12,7 @@ repository = "https://github.com/derekdreery/nom-midi-rs"
 default = []
 # This is for continuation events (e.g. used by Casio). Currently unimplemented
 continuation_sysex = []
+verbose-errors = ["nom/verbose-errors"]
 
 [dependencies]
 nom = "^4.0"
